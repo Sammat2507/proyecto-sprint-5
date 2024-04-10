@@ -19,3 +19,5 @@ if dispersion_button:
     st.write('Construyendo grafico de dispersion de kilometraje')
 
     disp_odometer = px.scatter(car_data, x='odometer', y='price')
+
+    st.plotly_chart(disp_odometer)
